@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inquiryform-a.css') }}">
+
+</head>
+<body>
+   <div class="form-wrapper form-accommodation">
+    <!-- Ihr Formular hier -->
+
+        <h2>Our service works as simple as that:</h2>
+        <p>Submit your inquiry, and within 24 hours, we'll respond with personalized offers.<br>Experience a service customized just for you.</p>
+        <form action="/submit_inquiry" method="post">
+            <input type="text" id="arrival" name="arrival" placeholder="Arrival">
+            <input type="text" id="departure" name="departure" placeholder="Departure">
+            <input type="number" id="amount" name="amount" placeholder="Amount of people">
+            <input type="text" id="budget" name="budget" placeholder="Budget in €">
+            <textarea id="requests" name="requests" placeholder="Special Requests"></textarea>
+            <div class="buttons">
+                <button type="reset">Cancel</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+

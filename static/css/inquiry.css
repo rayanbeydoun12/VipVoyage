@@ -1,0 +1,83 @@
+/* CSS-Datei für die Gestaltung der Inquiry Service-Seite */
+
+body {
+    background-color: #123F61; /* Hintergrundfarbe der gesamten Seite */
+    color: #FFFFFF; /* Textfarbe */
+    font-family: 'Arial', sans-serif; /* Standard-Schriftart */
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background-color: #123F61; /* Hintergrundfarbe des Headers */
+    padding: 20px; /* Abstand innen */
+    text-align: left; /* Ausrichtung des Logos */
+    position: fixed; /* Fixiert den Header am oberen Rand */
+    width: 100%; /* Vollständige Breite */
+    z-index: 1000; /* Stellt sicher, dass der Header über anderen Elementen liegt */
+}
+
+.logo {
+    width: 200px; /* Passen Sie die Größe nach Bedarf an */
+    height: auto;
+}
+
+.service-container {
+    text-align: center; /* Zentriert den Text */
+    padding: 50px; /* Abstand innen */
+    padding-top: 100px; /* Zusätzlicher Abstand oben, um Platz für den fixierten Header zu schaffen */
+}
+
+/* Stile für den Optionsbereich */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Stile für den Bereich Accommodation */
+.accomandation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Stile für den Bereich Transportation */
+.transportation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+
+/* Spezifische Stile für Hotel und Villa, um sie größer zu machen */
+.hotel, .villa {
+    width: 300px; /* Festgelegte Breite in Pixel */
+    height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis beizubehalten */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile für Yacht, Helicopter und Auto */
+.yacht, .helicopter, .car {
+    width: 200px; /* Festgelegte Breite in Pixel */
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .accomandation, .transportation {
+        flex-direction: column;
+    }
+
+    .hotel, .villa, .yacht, .helicopter, .car {
+        width: 100%; /* Auf kleinen Bildschirmen nehmen die Bilder die volle Breite ein */
+        margin-bottom: 20px; /* Fügt Abstand zwischen den Bildern auf kleinen Bildschirmen hinzu */
+    }
+}

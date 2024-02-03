@@ -1,0 +1,65 @@
+/* Allgemeine Formularstile */
+.form-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper label {
+    margin-top: 10px;
+}
+
+.form-wrapper input[type=text],
+.form-wrapper input[type=date],
+.form-wrapper input[type=time],
+.form-wrapper input[type=number],
+.form-wrapper textarea,
+.form-wrapper select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Damit die Breite inklusive Padding ist */
+}
+
+.form-wrapper input[type=submit] {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+.form-wrapper input[type=submit]:hover {
+    background-color: #4cae4c;
+}
+
+/* Spezifische Stile für Unterkunftsformular */
+.form-accommodation input,
+.form-accommodation select,
+.form-accommodation textarea {
+    /* Spezifische Stile, falls benötigt */
+}
+
+/* Spezifische Stile für Transportformular */
+.form-transportation input,
+.form-transportation select,
+.form-transportation textarea {
+    /* Spezifische Stile, falls benötigt */
+}

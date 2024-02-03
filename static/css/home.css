@@ -1,0 +1,114 @@
+/* home.css */
+
+/* Stil für den Kopfbereich */
+.site-header {
+    background-color: #123F61; /* Hintergrundfarbe der Leiste, passen Sie nach Bedarf an */
+    padding: 10px 20px; /* Padding für den Innenabstand */
+    display: flex; /* Flexbox für eine einfache horizontale Ausrichtung */
+    align-items: center; /* Vertikale Ausrichtung der Elemente */
+    justify-content: space-between; /* Verteilt die Elemente mit Raum dazwischen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
+    position: fixed; /* Fixiert den Header am oberen Rand */
+    top: 0; /* Position oben am Rand */
+    left: 0; /* Position am linken Rand */
+    width: 100%; /* Vollständige Breite */
+    z-index: 1000; /* Stellt sicher, dass der Header über anderen Elementen liegt */
+}
+
+/* Stil für den Link, der das Icon umgibt */
+.icon-link {
+    display: inline-block; /* Ermöglicht die Anwendung von Padding und Margin */
+    margin-left: 10px; /* Abstand zwischen den Icons */
+    cursor: pointer; /* Zeigt an, dass das Element klickbar ist */
+    text-decoration: none; /* Entfernt die Unterstreichung von Links */
+}
+
+.logo {
+    height: 50px; /* Höhe des Logos, passen Sie nach Bedarf an */
+    /* Falls das Logo eine feste Breite haben sollte, fügen Sie hier die Eigenschaft 'width' hinzu */
+}
+
+
+body {
+    background-image: url('../images/background.jpg'); /* Adjust the path as necessary */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Optional: Fix the background image */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center; /* Zentriert die Icons vertikal */
+    margin-right: 40px;
+    display: block; /* Stellt sicher, dass die Icons vertikal angeordnet sind */
+}
+
+.header-icon {
+    width: 30px; /* Oder die gewünschte Größe für Ihre Icons */
+    height: auto;
+    margin-left: 20px; /* Abstand zwischen den Icons */
+}
+
+
+/* Optional: Stil für Hover-Effekt */
+.icon-link:hover .header-icon {
+    opacity: 0.8; /* Macht das Icon beim Drüberfahren leicht transparent */
+}
+
+.centered-text {
+    font-family: 'Skia-Regular', sans-serif; /* Add fallback font */
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 2px 2px #123F61;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust based on preference */
+}
+
+.welcome-text {
+    font-family: 'Skia-Regular_Bold', sans-serif; /* Add fallback font */
+    font-size: 70px;
+    color: #123F61;
+    text-align: center;
+    position: absolute;
+    top: 20%; /* Erhöhen Sie diesen Wert, um den Text weiter nach unten zu schieben */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Stil für den Button im Body */
+.inquiry-button {
+    background-color: #123F61; /* Background color for the button */
+    color: #FFFFFF; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 25px; /* Rounded corners for the button */
+    font-family: 'Skia-Regular', sans-serif; /* Font for the text */
+    font-size: 24px; /* Font size */
+    text-decoration: none; /* Remove underline from the link */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the button */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+    max-width: 200px; /* Maximum width of the button */
+    display: block; /* Make the button a block-level element */
+    position: absolute; /* oder 'fixed', wenn der Button beim Scrollen sichtbar bleiben soll */
+    bottom: 20%; /* Abstand vom unteren Rand des Bildschirms oder des Containers */
+    left: 50%; /* Zentriert den Button horizontal */
+    transform: translateX(-50%); /* Verschiebt den Button zurück um seine eigene Hälfte der Breite */
+    text-align: center; /* Center the text horizontally */
+    width: 500px; /* Definiert eine feste Breite für den Button */
+    height: 50px; /* Definiert eine feste Höhe für den Button */
+    padding: 10px 20px; /* Innenabstand oben/unten und links/rechts */
+    line-height: 50px; /* Stellt sicher, dass der Text vertikal zentriert ist, wenn eine feste Höhe verwendet wird */
+   
+}
+
+/* Stil für das Icon im Button */
+.button-icon {
+    width: 30px; /* Icon size */
+    height: 30px;
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Aligns the icon vertically with the text */
+}

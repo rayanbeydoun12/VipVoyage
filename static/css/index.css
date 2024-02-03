@@ -1,0 +1,29 @@
+body {
+    background: #123F61; /* Dark blue background */
+    color: #FFFFFF; /* White text color */
+    font-family: 'Skia-Regular', sans-serif; /* Skia-Regular font with a fallback to sans-serif */
+    font-size: 36px; /* Font size */
+    text-align: center; /* Center-aligned text */
+    border-radius: 53px; /* Rounded corners */
+    border: 1px solid #123F61; /* Border, same color as the background for a solid look */
+    text-shadow: 0 2px 2px #123F61; /* Text shadow, dark blue */
+}
+
+
+#myButton {
+    background-color: #ffffff; /* Green background */
+    border: none; /* No border */
+    color: rgb(145, 99, 99); /* White text */
+    padding: 15px 32px; /* Padding around the text */
+    text-align: center; /* Center-aligned text */
+    text-decoration: none; /* No underline on text */
+    display: inline-block; /* Allows setting width and height */
+    font-size: 16px; /* Text size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Cursor changes to a hand icon when hovered over */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#myButton:hover {
+    background-color: #ffffff; /* Slightly darker green background on hover */
+}

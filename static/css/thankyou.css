@@ -1,0 +1,42 @@
+/* Grundlegende Reset-Stile für die Dankesseite */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Zentriert den Container für die Dankeseite */
+.thank-you-container {
+    background-color: #fff;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Stil für Überschriften und Absätze auf der Dankeseite */
+.thank-you-container h1,
+.thank-you-container p {
+    margin-bottom: 20px;
+}
+
+/* Stil für den Zurück-Button */
+.thank-you-container a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #5c6bc0;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+}

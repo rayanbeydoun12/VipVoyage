@@ -1,0 +1,58 @@
+.inquiryform-t {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.inquiryform-t h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inquiryform-t label {
+    display: block;
+    margin-top: 10px;
+}
+.inquiryform-t input[type=text],
+.inquiryform-t input[type=date],
+.inquiryform-t input[type=time],
+.inquiryform-t input[type=number],
+.inquiryform-t textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.inquiryform-t input[type=submit],
+.inquiryform-t input[type=button] {
+    width: calc(50% - 4px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: left;
+}
+.inquiryform-t input[type=button] {
+    background-color: #d9534f;
+    color: white;
+    margin-right: 8px;
+}
+.inquiryform-t input[type=submit] {
+    background-color: #5cb85c;
+    color: white;
+    float: right;
+}
+.inquiryform-t input[type=button]:hover,
+.inquiryform-t input[type=submit]:hover {
+    opacity: 0.9;
+}
+/* Clear floats */
+.inquiryform-t::after {
+    content: "";
+    clear: both;
+    display: table;
+}
